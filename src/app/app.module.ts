@@ -1,16 +1,18 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
+import { InputNoDotsModule } from './input-no-dots/inputs-no-dots.module';
+import { ZoomInPicModule } from './zoom-in-pic/zoom-in-pic.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    InputNoDotsModule,
+    ZoomInPicModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
